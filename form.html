@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styl.css" rel="stylesheet" type="text/css">
+    <title>Dokument</title>
+</head>
+<body>
+    <form onload="parsepesel('pesel')">
+        <h1>Formlularz</h1>
+            <input type="text" placeholder="Imie" maxlength="20" id="imie">
+            <input type="text" placeholder="Nazwisko" maxlength="30" id="nazwisko">
+            <input type="text" placeholder="Pesel" maxlength="11" minlength="11" id="pesel" onkeyup="parsepesel('pesel')">
+            <input type="date" id="data">
+        <button onclick="button()">Dodaj</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
